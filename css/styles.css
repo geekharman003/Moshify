@@ -10,6 +10,7 @@
 
 
 /* Typography for mobile version */
+
 html{
     font-size: 62.5%;
 }
@@ -45,6 +46,7 @@ p{
     margin-top: 0;
 }
 
+
 /* Typography for desktop version */
 
 @media screen and (min-width:1024px) {
@@ -65,7 +67,9 @@ p{
     }
 }
 
+
 /* Links */
+
 a{
     text-decoration: none;
 }
@@ -91,5 +95,39 @@ a{
 @media screen and (min-width:1024px){
     .link-arrow{
         font-size: 1.5rem;
+    }
+}
+
+
+/* Badges */
+
+.badge{
+    border-radius: 20px;
+    padding: 0.5rem 2rem;
+    font-weight: 600;
+    white-space: nowrap;
+    font-size: 2rem;
+}
+
+.badge--primary{
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.badge--secondary{
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.badge-small{
+    font-size: 1.6rem;
+}
+
+@media screen and (min-width:1024px) {
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge-small{
+        font-size: 1.2rem;
     }
 }
