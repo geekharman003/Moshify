@@ -389,6 +389,9 @@ a {
   .plan__description {
     font-size: 1.7rem;
   }
+  .plan--popular .card__header::before{
+    width: 30px;
+  }
 }
 /* Media */
 .media {
@@ -735,3 +738,59 @@ a {
   }
 }
 
+
+/* Plans Block */
+
+.plans{
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  gap: 10rem 0;
+  padding: 4rem;
+  justify-content: center;
+}
+
+.plans .plan{
+  max-width: 500px;
+}
+
+.plan .card .card__header{
+  padding: 3rem 1rem;
+}
+
+.plan:hover{
+  transform: scale(1.05);
+transition: transform 0.4s;
+}
+
+.plan--popular{
+  transform: scale(1.1);
+}
+
+.plan--popular:hover{
+  transform: scale(1.2);
+}
+
+
+@media screen and (min-width:1024px) {
+  .plans{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: none;
+    padding: 5rem;
+    gap: 4rem;
+  }
+  .plan:hover{
+  transform: scale(1.05);
+transition: transform 0.4s;
+}
+
+.plan--popular:hover{
+  transform: scale(1.15);
+transition: transform 0.4s;
+}
+
+
+.plan .card .card__header{
+  padding:2rem 3rem ;
+}
+
+}
